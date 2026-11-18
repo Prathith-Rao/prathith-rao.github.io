@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d0c12">
+  <meta name="description" content="Prathith Suresh Rao’s portfolio of cloud, Linux, machine learning and web projects.">
+  <meta property="og:title" content="Prathith Rao • Engineering Portfolio">
+  <meta property="og:description" content="Projects in cloud infrastructure, Linux, and applied machine learning. Bengaluru, India.">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+  <title>Prathith Rao • Engineering Portfolio</title>
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <div class="frame nav">
+      <a class="wordmark" href="#top" aria-label="Prathith Rao, back to top"><span aria-hidden="true" class="mark"></span> PRATHITH.RAO</a>
+      <nav aria-label="Primary navigation">
+        <a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero frame" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <p class="eyebrow"><span class="led" aria-hidden="true"></span> Computer Science &amp; Engineering</p>
+        <h1 id="hero-title">Prathith<br><span>Rao<span class="period">.</span></span></h1>
+        <p class="terminal" aria-hidden="true"><span class="prompt">&gt;</span> <span id="typewriter">I build for the cloud.</span><span class="caret"></span></p>
+        <p class="intro">I’m a computer science student in Bengaluru building cloud tools, Linux applications, and systems that learn from real-world data.</p>
+        <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="hero-art">
+        <div class="art-frame">
+          <span class="art-cross northwest" aria-hidden="true">+</span>
+          <span class="art-cross northeast" aria-hidden="true">+</span>
+          <span class="art-cross southwest" aria-hidden="true">+</span>
+          <span class="art-cross southeast" aria-hidden="true">+</span>
+          <canvas id="matrix" aria-hidden="true"></canvas>
+        </div>
+        <button id="motion" class="motion mono" type="button" hidden>Pause animation <span aria-hidden="true">Ⅱ</span></button>
+      </div>
+      <div class="hero-foot mono">
+        <span><span aria-hidden="true">⌖</span> BENGALURU, INDIA</span>
+        <a href="https://github.com/Prathith-Rao">GITHUB <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="frame section" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span class="rail" aria-hidden="true"></span> The project archive</p>
+          <h2 id="work-title">Selected work<span class="period">.</span></h2>
+        </div>
+        <div class="filters" role="group" aria-label="Filter projects" hidden>
+          <button type="button" aria-pressed="true" data-filter="all">All</button>
+          <button type="button" aria-pressed="false" data-filter="systems">Cloud &amp; systems</button>
+          <button type="button" aria-pressed="false" data-filter="ml">AI &amp; ML</button>
+          <button type="button" aria-pressed="false" data-filter="web">Web &amp; games</button>
+        </div>
+      </div>
+      <p class="sr-only" id="filter-status" role="status"></p>
+      <div class="projects">
+        <article class="project featured" data-categories="ml">
+          <div class="project-copy">
+            <p class="eyebrow">Machine learning <span aria-hidden="true">/</span> Dec 2025 – Mar 2026</p>
+            <h3>Lumina</h3>
+            <p>A smart street-lighting system that adjusts illumination in response to real-time usage patterns.</p>
+            <ul class="tags" aria-label="Technologies"><li>Python</li><li>Machine learning</li><li>Adaptive control</li></ul>
+            <a class="code-link" href="https://github.com/Prathith-Rao/ML_Based_Street_Lighting_Mini_Project">Lumina source <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="project-metric">
+            <div class="metric-grid" aria-hidden="true"></div>
+            <strong>~59<span>%</span></strong>
+            <p>Lower electricity use in the test grid</p>
+          </div>
+        </article>
+
+        <article class="project" data-categories="systems">
+          <div class="project-art cloud" aria-hidden="true"><span class="pixel-icon" data-icon="server"></span></div>
+          <div class="project-copy">
+            <p class="eyebrow">Cloud support <span aria-hidden="true">/</span> Oct – Nov 2026</p>
+            <h3>Cloud Support Incident Lab</h3>
+            <p>Deployed a web server, diagnosed service and access failures, and built a Python health check. Documented evidence, root causes, recovery steps, and customer updates.</p>
+            <ul class="tags" aria-label="Technologies"><li>EC2</li><li>S3</li><li>Linux</li><li>Python</li></ul>
+          </div>
+        </article>
+
+        <article class="project" data-categories="systems">
+          <div class="project-art costs" aria-hidden="true"><span class="pixel-icon" data-icon="chart"></span></div>
+          <div class="project-copy">
+            <p class="eyebrow">Cloud computing <span aria-hidden="true">/</span> Dec 2025</p>
+            <h3>Costimate</h3>
+            <p>Forecasts cloud workload costs from token consumption, helping teams budget for AI and cloud usage.</p>
+            <ul class="tags" aria-label="Technologies"><li>AWS</li><li>Python</li></ul>
+          </div>
+        </article>
+
+        <article class="project" data-categories="systems">
+          <div class="project-art sound" aria-hidden="true"><span class="pixel-icon" data-icon="wave"></span></div>
+          <div class="project-copy">
+            <p class="eyebrow">Linux tooling <span aria-hidden="true">/</span> Dec 2024 – Mar 2025</p>
+            <h3>Ztune</h3>
+            <p>A Linux shell music player that uses FFmpeg for audio processing and a Zenity interface for playback controls.</p>
+            <ul class="tags" aria-label="Technologies"><li>C</li><li>Bash</li><li>FFmpeg</li><li>Zenity</li></ul>
+          </div>
+        </article>
+
+        <article class="project" data-categories="web">
+          <div class="project-art crypt" aria-hidden="true"><span class="pixel-icon" data-icon="hash"></span></div>
+          <div class="project-copy">
+            <p class="eyebrow">Game design <span aria-hidden="true">/</span> Apr – Jun 2025</p>
+            <h3>HASHME</h3>
+            <p>A puzzle game that introduces cryptography to non-technical students through interactive challenges.</p>
+            <ul class="tags" aria-label="Disciplines"><li>Cryptography</li><li>Puzzle design</li></ul>
+          </div>
+        </article>
+
+        <article class="project" data-categories="ml web">
+          <div class="project-art quiz" aria-hidden="true"><span class="pixel-icon" data-icon="spark"></span></div>
+          <div class="project-copy">
+            <p class="eyebrow">Edtech <span aria-hidden="true">/</span> Dec 2024 – Mar 2025</p>
+            <h3>Quizzle</h3>
+            <p>An AI-enabled learning platform that adjusts quiz difficulty based on how learners perform.</p>
+            <ul class="tags" aria-label="Disciplines"><li>AI</li><li>Web development</li></ul>
+          </div>
+        </article>
+
+        <article class="project" data-categories="web">
+          <div class="project-art heritage" aria-hidden="true"><span class="pixel-icon" data-icon="arch"></span></div>
+          <div class="project-copy">
+            <p class="eyebrow">Digital heritage <span aria-hidden="true">/</span> Apr – Jun 2025</p>
+            <h3>A.R.C.H.</h3>
+            <p>A web experience that uses visual storytelling and intuitive navigation to showcase India’s cultural heritage.</p>
+            <ul class="tags" aria-label="Disciplines"><li>UI/UX</li><li>Web development</li></ul>
+            <a class="code-link" href="https://github.com/Prathith-Rao/A.R.C.H">A.R.C.H. source <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="frame section about" id="about" aria-labelledby="about-title">
+      <div>
+        <p class="eyebrow"><span class="rail" aria-hidden="true"></span> About me</p>
+        <h2 id="about-title">Curious about<br>how things work<span class="period">.</span></h2>
+        <p>I study Computer Science and Engineering at BMS College of Engineering. My projects span AWS troubleshooting, Linux tooling, and applied machine learning.</p>
+        <div class="education">
+          <h3>BMS College of Engineering</h3>
+          <p>B.E. in Computer Science and Engineering</p>
+          <p class="mono">EXPECTED 2027 <span aria-hidden="true">/</span> CGPA 8.8 / 10</p>
+        </div>
+      </div>
+      <div class="profile">
+        <h3>Toolkit</h3>
+        <dl class="toolkit">
+          <div><dt>Cloud &amp; systems</dt><dd>AWS EC2 &amp; S3, Linux, Wireshark, Cisco Packet Tracer</dd></div>
+          <div><dt>Programming</dt><dd>Python, C/C++, Bash, HTML &amp; CSS</dd></div>
+          <div><dt>Data &amp; tooling</dt><dd>TensorFlow, scikit-learn, pandas, NumPy, MySQL, MongoDB, Git</dd></div>
+        </dl>
+        <h3>Training</h3>
+        <p>Computer Networks (NPTEL), AWS Basics and Git &amp; GitHub (freeCodeCamp).</p>
+        <h3>Community</h3>
+        <p>Volunteering with Rotaract, Tarangini MM, and National Service Scheme camps.</p>
+      </div>
+    </section>
+
+    <section class="frame section contact" id="contact" aria-labelledby="contact-title">
+      <p class="eyebrow"><span class="rail" aria-hidden="true"></span> Contact</p>
+      <h2 id="contact-title">Let’s connect<span class="period">.</span></h2>
+      <p>Interested in what I’m building? Find me on GitHub.</p>
+      <a class="button button-primary" href="https://github.com/Prathith-Rao">Visit my GitHub <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+  <footer class="frame footer mono">
+    <span>PRATHITH SURESH RAO</span>
+    <a href="#top">BACK TO TOP <span aria-hidden="true">↑</span></a>
+  </footer>
+</body>
+</html>
